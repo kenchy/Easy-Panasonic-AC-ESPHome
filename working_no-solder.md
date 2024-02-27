@@ -12,3 +12,6 @@ I bought one of these to test with:
 https://www.ebay.co.uk/itm/204065741640?var=504483739988
 
 As it has pre soldered PINS, you can just connect the cable straight to the pins.
+
+![Picture of Connector](node_esp32_no_solder_1.jpg)
+![Picture of Board](node_esp32_no_solder_2.jpg)
