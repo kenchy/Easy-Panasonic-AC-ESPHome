@@ -5,6 +5,6 @@ Some clever chap here https://github.com/DomiStyle/esphome-panasonic-ac/tree/mas
 
 My aim is to give people a relatively easy to understand list of components that should work with no/minimal soldering and how to get the components.
 
-So far I have one board (no soldering required) working and plugged in to the CN-CNT port based on https://github.com/DomiStyle/esphome-panasonic-ac/issues/111 and several failed attempts, and a burnt out ESP8266.
+So far I have one board (no soldering required) and one board (with minimal soldering) working and plugged in to the CN-CNT port based on https://github.com/DomiStyle/esphome-panasonic-ac/issues/111 and several failed attempts, and a burnt out ESP8266.
 
 
