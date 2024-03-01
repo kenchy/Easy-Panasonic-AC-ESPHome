@@ -1,0 +1,51 @@
+---
+substitutions:
+  name: <name of ac here> 
+  climate_name: ${name}
+
+esphome:
+  name: ${name}
+  friendly_name: ${name}
+
+external_components:
+  source: github://DomiStyle/esphome-panasonic-ac
+  components: [panasonic_ac]
+
+uart:
+  tx_pin: GPIO17
+  rx_pin: GPIO16
+  baud_rate: 9600
+  parity: EVEN
+  #stop_bits: 1
+  #data_bits: 8
+
+climate:
+  - platform: panasonic_ac
+    type: cnt  #cz-tacg1
+    #type:wlan #for dnsk-p11
+    name: ${climate_name}
+   #horizontal_swing_select:
+   #  name: Horizontal Swing Mode
+    vertical_swing_select:
+      name: Vertical Swing Mode
+    mild_dry_switch:
+      name: Panasonic AC Mild Dry Switch
+    current_power_consumption:
+      name: Panasonic AC Power Consumption
+  # econavi_switch:
+    # name: Panasonic AC Econavi Switch
+  # nanoex_switch:
+    # name: Panasonic AC NanoeX Switch
+    outside_temperature:
+      name: Outside Temperature
+    visual:
+      temperature_step:
+        target_temperature: 0.5
+        current_temperature: 0.1
+
+esp32:
+  board: wemos_d1_mini32
+ #board: nodemcu-32s
+
+<<: !include network_pac_common.yaml
+

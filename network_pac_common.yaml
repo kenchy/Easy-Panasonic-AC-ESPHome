@@ -1,0 +1,24 @@
+---
+logger:
+  level: INFO #VERBOSE #DEBUG #INFO
+  #baud_rate: 115200 # Set to zero to disable serial over UART
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: <replace with encryption key>
+
+ota:
+  password: "come up with a strong password"
+
+wifi:
+  ssid: "<your ssid here>"
+  password: "<your passphrase here>"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "${name} Pac Fallback Hotspot"
+    password: "<some passphrase here>"
+
+captive_portal:
+
